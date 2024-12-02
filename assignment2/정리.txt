@@ -1,0 +1,9 @@
+1 //
+2 //
+3 //
+4 //
+5 // 단어수 찾기,#include <fstream>,  ifstream infile("sample_lines.txt"); while (getline(infile, line)) { 사용하여 파일 열고 한 문장씩 읽기.
+6 // 파일을 읽고 단어 벡터에 넣은후 사전식정렬하기 , words.push_back(line);으로 넣고 int temp2 = words[i].compare(words[j]); 사용하여 사전식 정렬함.
+7 //
+8 //
+9 // 영단어 사전식순서로 설명과 같이 정리하고 단어 찾기,auto it = words.begin(); auto it2 = explanations.begin(); 사용하여 인터레이터로 사전식 순서로 정렬함 조건은 while (it != words.end() && *it < word) 사용 bool found =false;하고 찾으면 true로 변경
